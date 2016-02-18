@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,700,500,100italic,300italic,400italic,500italic,700italic,900italic|Roboto+Condensed:400,300,700|Roboto+Mono:400,100,300,500,700);
+@media (min-width: 30em) {
+  .row {
+    width: 100% !important;
+    display: table !important;
+    table-layout: fixed !important; }
+
+  .col {
+    display: table-cell; }
+
+  .row:before, .row:after {
+    content: none; } }
+.box {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  position: relative;
+  display: inline-block; }
+  .box img {
+    max-width: 100%;
+    height: auto; }
+  .box .delete-box {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 9999;
+    opacity: 0;
+    transition: 0.2s opacity;
+    width: 36px;
+    height: 36px;
+    background: #7E7D7C;
+    text-align: center;
+    line-height: 39px;
+    border-radius: 30px; }
+    .box .delete-box i {
+      color: #fff; }
+    .box .delete-box:active {
+      transform: scale(0.9); }
+
+.in-the-zone:hover img {
+  outline: 1px dotted gray; }
+.in-the-zone:hover .delete-box {
+  opacity: 1 !important; }
+
+.drop-zone {
+  width: 95vw;
+  height: 90vh;
+  outline: 1px solid #ccc;
+  transition: width 0.5s; }
+
+.catalog-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 30vw;
+  background: #C9C9C7;
+  right: -30vw;
+  top: 0px;
+  transition: 0.5s right; }
+
+.catalog-inner {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .catalog-inner .toggle-catalog {
+    cursor: pointer;
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #7E7D7C;
+    transition: background 0.2s;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px; }
+    .catalog-inner .toggle-catalog:hover {
+      background: #0086D4;
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1); }
+    .catalog-inner .toggle-catalog i {
+      font-size: 32px;
+      color: #fff;
+      position: relative;
+      top: 3px; }
+
+.active-catalog {
+  right: 0px; }
+
+.active-zone {
+  width: calc(70vw - 80px); }
