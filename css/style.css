@@ -18,7 +18,7 @@ nav img {
   width: 100%; }
 
 .box {
-  width: 150px;
+  width: 130px;
   height: auto;
   margin: 10px;
   position: relative;
@@ -54,7 +54,7 @@ nav img {
 
 .drop-zone {
   width: 95vw;
-  height: 98vh;
+  height: calc(100vh - 110px);
   outline: 1px solid #ccc;
   transition: width 0.5s; }
 
@@ -66,9 +66,6 @@ nav img {
   right: -30vw;
   top: 0px;
   transition: 0.5s right; }
-
-.scroller {
-  overflow-y: scroll; }
 
 .catalog-inner {
   position: relative;

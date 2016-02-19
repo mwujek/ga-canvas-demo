@@ -75,7 +75,7 @@ nav{
 
 $catalog-width: 30vw;
 .box{
-	width: 150px;
+	width: 130px;
 	height: auto;
 	margin: 10px;
 	position: relative;
@@ -123,7 +123,7 @@ $catalog-width: 30vw;
 
 .drop-zone{
 	width: 95vw;
-	height: 98vh;
+	height: calc(100vh - 110px);
 	//margin: 50px auto;
 	outline: 1px solid #ccc;
 	transition: width 0.5s;
@@ -140,7 +140,7 @@ $catalog-width: 30vw;
 	transition: 0.5s right;
 }
 .scroller{
-	overflow-y:scroll;
+	//overflow-y:scroll;
 
 }
 
