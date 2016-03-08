@@ -139,3 +139,45 @@ nav img {
 canvas {
   height: 100%;
   width: 100%; }
+
+.newText {
+  position: absolute;
+  padding: 4px 6px;
+  border: 0;
+  font-size: 16px;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 20px;
+  background: #eee;
+  padding: 20px 10px;
+  border-radius: 4px; }
+
+.newText input {
+  margin-right: 6px;
+  line-height: 20px;
+  font-size: 20px; }
+  .newText input:focus {
+    outline: 0; }
+
+em {
+  background: red;
+  position: relative;
+  top: -2px;
+  width: 26px;
+  height: 26px;
+  line-height: 28px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  font-style: normal;
+  opacity: 0.2;
+  cursor: pointer; }
+
+em:hover {
+  opacity: 1; }
+
+.newText:focus {
+  border: 1px solid #ccc;
+  outline: none; }

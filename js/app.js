@@ -76,6 +76,47 @@ $(document).ready(function(){
       $('.drop-zone').toggleClass('active-zone');
   });
 
+  var canAdd = false;
+
+$( window ).keydown(function(event) {
+  var thisKey = event.which;
+  if(thisKey === 84){
+    canAdd = true;
+  }
+});
+
+$( window ).keyup(function(event) {
+  canAdd = false;
+});
+
+$('.drop-zone').click(function(event){
+  
+  var xVal =event.pageX;
+  var yVal =event.pageY;
+  
+  if (canAdd){
+  
+  var newText = $('<span class="newText"><input type="text"><em>X</em></span>').appendTo('.drop-zone');
+  newText.css({
+    'left':xVal + 'px',
+    'top': yVal + 'px'
+  });
+    
+    newText.draggable();
+  }
+  
+  
+  
+});
+
+
+$( ".drop-zone" ).delegate( "em", "click", function() {
+  $( this ).parent().remove();
+});
+
+
+
+
 
 });
 
