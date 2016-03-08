@@ -12,6 +12,8 @@
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.min.js"></script>
+  <script type="text/paperscript" canvas="bg-canvas" src="js/draw.js"></script>
 
 </head>
 
@@ -20,7 +22,9 @@
 <img src="img/nav.png">
 </nav>
 
-<section class="drop-zone"></section>
+<section class="drop-zone">
+  <canvas id="bg-canvas" resize></canvas>
+</section>
 
 <section class="catalog-wrapper">
   <div class="catalog-inner">
@@ -35,36 +39,29 @@
       </div>
 
     <div class="box-1 box">
-      <img src="img/item-1.jpg">
+      <img src="img/item-01.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
       
     </div>
 
-    <!-- <div class="box-2 box">
-      <img src="img/item-2.jpg">
-      <span class="delete-box">
-          <i class="icon ion-close"></i>
-      </span>
-    </div> -->
-
     <div class="box-3 box">
-      <img src="img/item-3.jpg">
+      <img src="img/item-02.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
     </div>
 
     <div class="box-4 box">
-      <img src="img/item-4.jpg">
+      <img src="img/item-03.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
     </div>
 
     <div class="box-5 box">
-      <img src="img/item-5.jpg">
+      <img src="img/item-04.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
@@ -73,56 +70,78 @@
 
 
     <div class="box-6 box">
-      <img src="img/item-6.jpg">
+      <img src="img/item-05.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
     </div>
 
-    <!--     <div class="box-2 box">
-      <img src="img/item-2.jpg">
-      <span class="delete-box">
-          <i class="icon ion-close"></i>
-      </span>
-    </div>
-
-    <div class="box-7 box">
-      <img src="img/item-7.jpg">
-      <span class="delete-box">
-          <i class="icon ion-close"></i>
-      </span>
-    </div> -->
 
     <div class="box-16 box">
-      <img src="img/item-16.jpg">
+      <img src="img/item-06.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
     </div>
 
     <div class="box-18 box">
-      <img src="img/item-18.jpg">
+      <img src="img/item-07.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
     </div>
 
     <div class="box-10 box">
-      <img src="img/item-10.jpg">
+      <img src="img/item-08.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
     </div>
 
     <div class="box-11 box">
-      <img src="img/item-11.jpg">
+      <img src="img/item-09.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>
     </div>
 
     <div class="box-12 box">
-      <img src="img/item-12.jpg">
+      <img src="img/item-10.png">
+      <span class="delete-box">
+          <i class="icon ion-close"></i>
+      </span>
+    </div>
+
+    <div class="box-12 box">
+      <img src="img/item-11.png">
+      <span class="delete-box">
+          <i class="icon ion-close"></i>
+      </span>
+    </div>
+
+    <div class="box-12 box">
+      <img src="img/item-12.png">
+      <span class="delete-box">
+          <i class="icon ion-close"></i>
+      </span>
+    </div>
+
+    <div class="box-12 box">
+      <img src="img/item-13.png">
+      <span class="delete-box">
+          <i class="icon ion-close"></i>
+      </span>
+    </div>
+
+    <div class="box-12 box">
+      <img src="img/item-14.png">
+      <span class="delete-box">
+          <i class="icon ion-close"></i>
+      </span>
+    </div>
+
+    <div class="box-12 box">
+      <img src="img/item-15.png">
       <span class="delete-box">
           <i class="icon ion-close"></i>
       </span>

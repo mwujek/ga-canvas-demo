@@ -73,9 +73,9 @@ nav{
 	}
 }
 
-$catalog-width: 30vw;
+$catalog-width: 45vw;
 .box{
-	width: 130px;
+	width: 150px;
 	height: auto;
 	margin: 10px;
 	position: relative;
@@ -134,7 +134,7 @@ $catalog-width: 30vw;
 	position: fixed;
 	height: 100vh;
 	width: $catalog-width;
-	background: #333;
+	background: #ddd;
 	right: $catalog-width * -1;
 	top:0px;
 	transition: 0.5s right;
@@ -181,9 +181,9 @@ $catalog-width: 30vw;
 	right: 0px;
 }
 
-.active-zone{
-	width: calc(70vw - 80px)
-}	
+// .active-zone{
+// 	width: calc(70vw - 80px)
+// }	
 
 .scroller{
 	padding-top: 60px;
@@ -194,7 +194,7 @@ $catalog-width: 30vw;
 	height: 60px;
 	top:0;
 	position: absolute;
-	background: #ccc;
+	background: #aaa;
 	input{
 		height: 34px;
 		margin-left: 10px;
@@ -234,6 +234,9 @@ $catalog-width: 30vw;
 }
 
 
-
+canvas{
+	height: 100%;
+	width: 100%;
+}
 
 
